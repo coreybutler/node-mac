@@ -1,0 +1,24 @@
+{
+  "name": "node-mac",
+  "version": "0.0.1",
+  "description": "Support for Mac",
+  "keywords": [
+    "ngn",
+    "mac"
+  ],
+  "author": "Corey Butler <corey@coreybutler.com>",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "main": "lib/node-mac.js",
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coreybutler/node-mac.git"
+  },
+  "license": "MIT"
+}
