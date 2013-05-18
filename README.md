@@ -5,7 +5,8 @@ documentation is now available at the [node-mac documentation portal](http://cor
 
 This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
 However; it is capable of providing the same features for Node.JS scripts
-independently of NGN.
+independently of NGN. This is a port of [node-windows](https://github.com/coreybutler/node-mac) which offers
+similar services for Microsoft Windows.
 
 ## Overview
 
