@@ -1,4 +1,7 @@
 support
 test
-examples
+example
+docs
+Gruntfile.js
+node_modules
 *.sock

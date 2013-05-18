@@ -4,7 +4,9 @@
   "description": "Support for Mac",
   "keywords": [
     "ngn",
-    "mac"
+    "mac",
+    "daemon",
+    "service"
   ],
   "author": "Corey Butler <corey@coreybutler.com>",
   "devDependencies": {
