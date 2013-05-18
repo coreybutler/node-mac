@@ -1,6 +1,6 @@
 {
   "name": "node-mac",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Support for Mac",
   "keywords": [
     "ngn",
@@ -11,7 +11,9 @@
     "mocha": "*"
   },
   "main": "lib/node-mac.js",
-  "dependencies": {},
+  "dependencies": {
+    "optimist": "~0.4.0"
+  },
   "readmeFilename": "README.md",
   "scripts": {
     "test": "mocha"

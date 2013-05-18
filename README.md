@@ -1,8 +1,8 @@
 # node-mac
 
-  This is a standalone module, originally designed for internal use in [NGN](http://github.com/coreybutler/NGN).
-  However; it is capable of providing the same features for Node.JS scripts
-  independently of NGN.
+This is a standalone module, originally designed for internal use in [NGN](http://github.com/coreybutler/NGN).
+However; it is capable of providing the same features for Node.JS scripts
+independently of NGN.
 
 ## Overview
 
