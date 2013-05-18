@@ -3,7 +3,7 @@ documentation is now available at the [node-mac documentation portal](http://cor
 
 # node-mac
 
-This is a standalone module, originally designed for internal use in [NGN](http://github.com/coreybutler/NGN).
+This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
 However; it is capable of providing the same features for Node.JS scripts
 independently of NGN.
 
