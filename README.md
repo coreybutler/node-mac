@@ -12,12 +12,14 @@ similar services for Microsoft Windows.
 
 This module helps create/manage native processes and event logs for Node.js applications on Mac OSX.
 
+![Windows Mac](https://raw.github.com/coreybutler/node-mac/master/docs/helloworlddaemon.png)
+
 To start, install node-mac via:
 
     npm install node-mac
 
-node-mac is a utility for running Node.js scripts as Mac daemons. Please note that like all
-Mac daemons, creating one requires sudo/root privileges. To create a service with
+node-mac is a utility for creating/managing Node.js scripts as OSX daemons. Please note that like
+all OSX daemons, creating one requires sudo/root privileges. To create a service with
 node-mac, prepare a script like:
 
     var Service = require('node-mac').Service;
@@ -39,9 +41,7 @@ node-mac, prepare a script like:
 
 The code above creates a new `Service` object, providing a pretty name and description.
 The `script` attribute identifies the Node.js script that should run as a service. Upon running
-this, the script will be visible from the Windows Services utility.
-
-![Windows Mac](https://raw.github.com/coreybutler/node-mac/master/docs/helloworlddaemon.png)
+this, the script will be visible from the Activity Monitor.
 
 The `Service` object emits the following events:
 
@@ -169,7 +169,7 @@ for each Node.js script deployed as a service. A plist file is created in `/Libr
 by default. Additionally, two log files are generated in `/Library/Logs/<name>` for general output
 and error logging.
 
-_Event Logging_
+## Event Logging
 
 ![Mac log](https://raw.github.com/coreybutler/node-mac/master/docs/helloworldlog.png)
 
