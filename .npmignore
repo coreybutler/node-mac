@@ -3,5 +3,4 @@ test
 example
 docs
 Gruntfile.js
-node_modules
 *.sock
