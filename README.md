@@ -1,3 +1,6 @@
+This README provides a pretty good overview of what node-mac has to offer, but better
+documentation is now available at the [node-mac documentation portal](http://coreybutler.github.io/node-mac).
+
 # node-mac
 
 This is a standalone module, originally designed for internal use in [NGN](http://github.com/coreybutler/NGN).
