@@ -1,3 +1,5 @@
+[![NPM version](https://badge.fury.io/js/node-mac.png)](http://badge.fury.io/js/node-mac)
+
 This README provides a pretty good overview of what node-mac has to offer, but better
 documentation is now available at the [node-mac documentation portal](http://coreybutler.github.io/node-mac).
 
