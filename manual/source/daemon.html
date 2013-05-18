@@ -24,7 +24,7 @@
  *     var svc = new Service({
  *       name:'Hello World',
  *       description: 'The nodejs.org example web server.',
- *       script: 'C:\\path\\to\\helloworld.js')
+ *       script: '/path/to/helloworld.js')
  *     });
  *
  *     // Listen for the &quot;install&quot; event, which indicates the
@@ -134,7 +134,7 @@ var daemon = function(config) {
 	   *     var svc = new Service({
 	   *      name:'Hello World',
 	   *      description: 'The nodejs.org example web server.',
-	   *      script: 'C:\\path\\to\\helloworld.js',
+	   *      script: '/path/to/helloworld.js',
 	   *      env: {
 	   *        name: &quot;NODE_ENV&quot;,
 	   *        value: &quot;production&quot;
@@ -146,7 +146,7 @@ var daemon = function(config) {
 	   *     var svc = new Service({
 	   *      name:'Hello World',
 	   *      description: 'The nodejs.org example web server.',
-	   *      script: 'C:\\path\\to\\helloworld.js',
+	   *      script: '/path/to/helloworld.js',
 	   *      env: [{
 	   *        name: &quot;HOME&quot;,
 	   *        value: process.env[&quot;USERPROFILE&quot;] // Access the user home directory
@@ -276,7 +276,7 @@ var daemon = function(config) {
 <span id='nodemac-Daemon-method-install'>		/**
 </span>		 * @method install
 		 * Install the script as a background process/daemon.
-		 * @param {Function} callback
+		 * @param {Function} [callback]
 		 */
 		install: {
 			enumerable: true,
