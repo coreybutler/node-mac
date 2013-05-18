@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The source code</title>
+  <link href="../resources/prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../resources/prettify/prettify.js"></script>
+  <style type="text/css">
+    .highlight { display: block; background-color: #ddd; }
+  </style>
+  <script type="text/javascript">
+    function highlight() {
+      document.getElementById(location.hash.replace(/#/, "")).className = "highlight";
+    }
+  </script>
+</head>
+<body onload="prettyPrint(); highlight();">
+  <pre class="prettyprint lang-js"><span id='nodemac'>/**
+</span> * @class nodemac
+ * This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
+ * However; it is capable of providing the same features for Node.JS scripts
+ * independently of NGN.
+ *
+ * ### Getting node-mac
+ *
+ * `npm install -g node-mac`
+ *
+ * ### Using node-mac
+ *
+ * `var nm = require('node-mac');`
+ *
+ * @singleton
+ * @author Corey Butler
+ */
+if (require('os').platform().indexOf('darwin') &lt; 0){
+  throw 'ngn-mac is only supported on Mac OSX.';
+}
+
+// Add daemon management capabilities
+module.exports.Service = require('./daemon');
+//module.exports.EventLogger = require('./eventlog');</pre>
+</body>
+</html>
