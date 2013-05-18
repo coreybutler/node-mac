@@ -1,18 +1,10 @@
-# node-mac
-
-This is a standalone module, originally designed for internal use in [NGN](http://github.com/coreybutler/NGN).
-However; it is capable of providing the same features for Node.JS scripts
-independently of NGN.
-
-## Overview
-
-This module helps create/manage native processes and event logs for Node.js applications on Mac OSX.
+# Mac Services
 
 To start, install node-mac via:
 
     npm install node-mac
 
-node-mac is a utility for running Node.js scripts as Mac daemons. Please note that like all
+node-mac has a utility to run Node.js scripts as Mac daemons. Please note that like all
 Mac daemons, creating one requires sudo/root privileges. To create a service with
 node-mac, prepare a script like:
 

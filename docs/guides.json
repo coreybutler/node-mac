@@ -1,0 +1,12 @@
+[{
+  "title": "Node Mac",
+  "items": [{
+    "name": "nodeMacService",
+    "title": "Services",
+    "description": "Create Mac (background) services from your node.js scripts."
+  },{
+    "name": "nodemactroubleshooting",
+    "title": "Troubleshooting",
+    "description": "Having problems? Check here for answers."
+  }]
+}]
