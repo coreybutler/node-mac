@@ -25,7 +25,7 @@ node-mac, prepare a script like:
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: 'C:\\path\\to\\helloworld.js')
+      script: '/path/to/helloworld.js')
     });
 
     // Listen for the "install" event, which indicates the
@@ -65,7 +65,7 @@ Sometimes you may want to provide a service with static data, passed in on creat
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: 'C:\\path\\to\\helloworld.js',
+      script: '/path/to/helloworld.js',
       env: {
         name: "HOME",
         value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
@@ -77,7 +77,7 @@ You can also supply an array to set multiple environment variables:
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: 'C:\\path\\to\\helloworld.js',
+      script: '/path/to/helloworld.js',
       env: [{
         name: "HOME",
         value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
@@ -137,7 +137,7 @@ Both the initial wait time and the growth rate are configuration options that ca
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: 'C:\\path\\to\\helloworld.js'),
+      script: '/path/to/helloworld.js'),
       wait: 2,
       grow: .5
     });
@@ -148,12 +148,15 @@ would be 3 seconds later while the fourth would be 4.5 seconds later.
 **Don't DOS Yourself!**
 
 Repetitive recycling could potentially go on forever with a bad script. To handle these situations, node-mac
-supports two kinds of caps. Using `maxRetries` will cap the maximum number of restart attempts. By
-default, this is unlimited. Setting it to 3 would tell the process to no longer restart a process
-after it has failed 3 times. Another option is `maxRestarts`, which caps the number of restarts attempted
-within 60 seconds. For example, if this is set to 3 (the default) and the process crashes/restarts repeatedly,
-node-mac will cease restart attempts after the 3rd cycle in a 60 second window. Both of these
-configuration options can be set, just like `wait` or `grow`.
+supports two kinds of caps. Using `maxRetries` will cap the maximum total number of times the service
+restarts itself before it kills the process. By default, this is unlimited. Setting it to 3 would tell the
+process to stop restarting itself (i.e. leave the dead process alone) after it tries to restart it 3 times.
+
+Another option is `maxRestarts`, which caps the number of restarts attempted within a 60 second period.
+For example, if this is set to 3 (the default) and the process crashes/restarts repeatedly,
+node-mac will stop restarting the process after the 3rd crash within a 60 second timeframe.
+
+Both of these configuration options can be set, just like `wait` or `grow`.
 
 Finally, an attribute called `abortOnError` can be set to `true` if you want your script to **not** restart
 at all when it exits with an error.
