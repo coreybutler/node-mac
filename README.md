@@ -7,7 +7,7 @@ documentation is now available at the [node-mac documentation portal](http://cor
 
 This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
 However; it is capable of providing the same features for Node.JS scripts
-independently of NGN. This is a port of [node-windows](https://github.com/coreybutler/node-mac) which offers
+independently of NGN. This is a port of [node-windows](https://github.com/coreybutler/node-windows) which offers
 similar services for Microsoft Windows.
 
 ## Overview
@@ -24,6 +24,7 @@ node-mac is a utility for creating/managing Node.js scripts as OSX daemons. Plea
 all OSX daemons, creating one requires sudo/root privileges. To create a service with
 node-mac, prepare a script like:
 
+``` js
     var Service = require('node-mac').Service;
 
     // Create a new service object
@@ -40,6 +41,7 @@ node-mac, prepare a script like:
     });
 
     svc.install();
+```
 
 The code above creates a new `Service` object, providing a pretty name and description.
 The `script` attribute identifies the Node.js script that should run as a service. Upon running
@@ -65,6 +67,7 @@ They can be stopped from the Activity Monitor and make logs available in the Con
 
 Sometimes you may want to provide a service with static data, passed in on creation of the service. You can do this by setting environment variables in the service config, as shown below:
 
+``` js
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
@@ -74,9 +77,11 @@ Sometimes you may want to provide a service with static data, passed in on creat
         value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
       }
     });
+```
 
 You can also supply an array to set multiple environment variables:
 
+``` js
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
@@ -90,11 +95,13 @@ You can also supply an array to set multiple environment variables:
         value: path.join(process.env["USERPROFILE"],"/temp") // use a temp directory in user's home directory
       }]
     });
+```
 
 ## Cleaning Up: Uninstall a Service
 
 Uninstalling a previously created service is syntactically similar to installation.
 
+``` js
     var Service = require('node-mac').Service;
 
     // Create a new service object
@@ -111,6 +118,7 @@ Uninstalling a previously created service is syntactically similar to installati
 
     // Uninstall the service.
     svc.uninstall();
+```
 
 The uninstall process only removes process-specific files. **It does NOT delete your Node.js script, but it will remove the logs!**
 This process also removes the plist file for the service.
@@ -137,6 +145,7 @@ The second occurs after 1.25 seconds. The third after 1.56 seconds (1.25 increas
 Both the initial wait time and the growth rate are configuration options that can be passed to a new
 `Service`. For example:
 
+``` js
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
@@ -144,6 +153,7 @@ Both the initial wait time and the growth rate are configuration options that ca
       wait: 2,
       grow: .5
     });
+```
 
 In this example, the wait period will start at 2 seconds and increase by 50%. So, the second attempt
 would be 3 seconds later while the fourth would be 4.5 seconds later.
