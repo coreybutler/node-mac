@@ -132,13 +132,13 @@ var daemon = function(config) {
 
 <span id='nodemac-Daemon-cfg-cwd'>    /**
 </span>     * @cfg {String} [cwd]
-     * The absolute path of the current working directory. Defaults to `process.cwd()`.
+     * The absolute path of the current working directory. Defaults to the base directory of #script.
      */
     cwd: {
       enumerable: false,
       writable: true,
       configurable: false,
-      value: config.cwd || process.cwd()
+      value: config.cwd || p.dirname(this.script)
     },
 
 <span id='nodemac-Daemon-cfg-env'>    /**
