@@ -31,7 +31,7 @@ node-mac, prepare a script like:
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: '/path/to/helloworld.js')
+      script: '/path/to/helloworld.js'
     });
 
     // Listen for the "install" event, which indicates the
@@ -74,7 +74,7 @@ Sometimes you may want to provide a service with static data, passed in on creat
       script: '/path/to/helloworld.js',
       env: {
         name: "HOME",
-        value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
+        value: process.env["USERPROFILE"] // service is now able to access the user who created its home directory
       }
     });
 ```
@@ -88,7 +88,7 @@ You can also supply an array to set multiple environment variables:
       script: '/path/to/helloworld.js',
       env: [{
         name: "HOME",
-        value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
+        value: process.env["USERPROFILE"] // service is now able to access the user who created its home directory
       },
       {
         name: "TEMP",
@@ -149,7 +149,7 @@ Both the initial wait time and the growth rate are configuration options that ca
     var svc = new Service({
       name:'Hello World',
       description: 'The nodejs.org example web server.',
-      script: '/path/to/helloworld.js'),
+      script: '/path/to/helloworld.js',
       wait: 2,
       grow: .5
     });
