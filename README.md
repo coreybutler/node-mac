@@ -1,4 +1,9 @@
 [![NPM version](https://badge.fury.io/js/node-mac.png)](http://badge.fury.io/js/node-mac)
+[![NGN Dependencies](https://david-dm.org/coreybutler/node-mac.png)](https://david-dm.org/coreybutler/node-mac)
+[![Build](https://api.travis-ci.org/coreybutler/node-mac.png)](https://travis-ci.org/coreybutler/node-mac)
+
+Follow the author on [G+](https://plus.google.com/u/1/111169756342687497578?rel=author)
+or [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
 
 This README provides a pretty good overview of what node-mac has to offer, but better
 documentation is now available at the [node-mac documentation portal](http://coreybutler.github.io/node-mac).
@@ -7,8 +12,10 @@ documentation is now available at the [node-mac documentation portal](http://cor
 
 This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
 However; it is capable of providing the same features for Node.JS scripts
-independently of NGN. This is a port of [node-windows](https://github.com/coreybutler/node-windows) which offers
-similar services for Microsoft Windows.
+independently of NGN.
+
+For alternative versions, see [node-windows](http://github.com/coreybutler/node-windows)
+and [node-linux](http://github.com/coreybutler/node-linux)
 
 ## Overview
 
