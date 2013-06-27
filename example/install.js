@@ -1,15 +1,14 @@
-var Service = require('../').Service;
-
-// Create a new service object
-var svc = new Service({
-  name:'Hello World',
-  description: 'The nodejs.org example web server.',
-  script: require('path').join(__dirname,'helloworld.js'),
-  env:{
-    name: "NODE_ENV",
-    value: "production"
-  }
-});
+var Service = require('../').Service,
+    svc = new Service({
+      name: 'Hello World',
+      description: 'The nodejs.org example web server.',
+      script: require('path').join(__dirname,'helloworld.js'),
+      template: '/workspace/node-linux/lib/templates/systemv/debian',
+      env:{
+        name: "NODE_ENV",
+        value: "production"
+      }
+    });
 
 // Listen for the "install" event, which indicates the
 // process is available as a service.
