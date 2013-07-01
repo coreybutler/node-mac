@@ -14,7 +14,7 @@
   },
   "main": "lib/node-mac.js",
   "dependencies": {
-    "optimist": "~0.4.0",
+    "optimist": "~0.6.0",
     "plist": "~0.4.3"
   },
   "readmeFilename": "README.md",
