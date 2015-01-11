@@ -13,6 +13,9 @@
     "mocha": "*"
   },
   "main": "lib/node-mac.js",
+  "os": [
+    "darwin"
+  ],
   "dependencies": {
     "optimist": "~0.6.0",
     "plist": "~0.4.3"
