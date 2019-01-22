@@ -1,3 +1,14 @@
+# node-mac
+
+I no longer have enough time to properly maintain this project and am seeking a new primary maintainer.
+
+This project has gained traction for two reasons:
+
+1. It works well on macOS.
+1. The same API can be used on Windows and Linux.
+
+The ideal maintainer would also support or at least closely work with the maintainer of ([node-windows](https://github.com/coreybutler/node-windows) & [node-linux](https://github.com/coreybutler/node-linux)). Please get in touch if you are interested in taking over.
+
 [![NPM version](https://badge.fury.io/js/node-mac.png)](http://badge.fury.io/js/node-mac)
 [![NGN Dependencies](https://david-dm.org/coreybutler/node-mac.png)](https://david-dm.org/coreybutler/node-mac)
 [![Build](https://api.travis-ci.org/coreybutler/node-mac.png)](https://travis-ci.org/coreybutler/node-mac)
