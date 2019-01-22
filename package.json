@@ -1,6 +1,6 @@
 {
   "name": "node-mac",
-  "version": "0.1.3",
+  "version": "0.1.8",
   "description": "Support daemon creation and management on Mac.",
   "keywords": [
     "ngn",
@@ -13,6 +13,9 @@
     "mocha": "*"
   },
   "main": "lib/node-mac.js",
+  "os": [
+    "darwin"
+  ],
   "dependencies": {
     "optimist": "~0.6.0",
     "plist": "~0.4.3"
