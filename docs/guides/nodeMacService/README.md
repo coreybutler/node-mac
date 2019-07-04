@@ -55,6 +55,7 @@ Sometimes you may want to provide a service with static data, passed in on creat
       name:'Hello World',
       description: 'The nodejs.org example web server.',
       script: 'C:\\path\\to\\helloworld.js',
+      args: ['--list-of-command-line-arguments="some_value"'],
       env: {
         name: "HOME",
         value: process.env["USERPROFILE"] // service is now able to access the user who created its' home directory
