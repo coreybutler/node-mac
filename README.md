@@ -1,20 +1,19 @@
 # node-mac
 
-I no longer have enough time to properly maintain this project and am seeking a new primary maintainer.
-
-This project has gained traction for two reasons:
-
-1. It works well on macOS.
-1. The same API can be used on Windows and Linux.
-
-The ideal maintainer would also support or at least closely work with the maintainer of ([node-windows](https://github.com/coreybutler/node-windows) & [node-linux](https://github.com/coreybutler/node-linux)). Please get in touch if you are interested in taking over.
-
 [![NPM version](https://badge.fury.io/js/node-mac.png)](http://badge.fury.io/js/node-mac)
 [![NGN Dependencies](https://david-dm.org/coreybutler/node-mac.png)](https://david-dm.org/coreybutler/node-mac)
 [![Build](https://api.travis-ci.org/coreybutler/node-mac.png)](https://travis-ci.org/coreybutler/node-mac)
 
-Follow the author on [G+](https://plus.google.com/u/1/111169756342687497578?rel=author)
-or [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
+**Sponsors (as of 2020)**
+
+<table cellpadding="10" cellspacing="0" border="0">
+  <tr>
+    <td><a href="https://metadoc.io"><img src="https://github.com/coreybutler/staticassets/raw/master/sponsors/metadoclogobig.png" width="200px"/></a></td>
+    <td><a href="https://butlerlogic.com"><img src="https://github.com/coreybutler/staticassets/raw/master/sponsors/butlerlogic_logo.png" width="200px"/></a></td>
+  </tr>
+</table>
+
+Follow the author on [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
 
 This README provides a pretty good overview of what node-mac has to offer, but better
 documentation is now available at the [node-mac documentation portal](http://coreybutler.github.io/node-mac).
