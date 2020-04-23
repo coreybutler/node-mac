@@ -4,6 +4,7 @@ var Service = require('../').Service,
       description: 'The nodejs.org example web server.',
       script: require('path').join(__dirname,'helloworld.js'),
       template: '/workspace/node-linux/lib/templates/systemv/debian',
+      args: ['--some-argument="Test"'],
       env:{
         name: "NODE_ENV",
         value: "production"
