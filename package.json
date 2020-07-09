@@ -1,6 +1,6 @@
 {
   "name": "node-mac",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "description": "Support daemon creation and management on Mac.",
   "keywords": [
     "ngn",
@@ -17,8 +17,8 @@
     "darwin"
   ],
   "dependencies": {
-    "optimist": "~0.6.0",
-    "plist": "~0.4.3"
+    "plist": "^3.0.1",
+    "yargs": "^15.4.0"
   },
   "readmeFilename": "README.md",
   "scripts": {
