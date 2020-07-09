@@ -1,6 +1,6 @@
 {
   "name": "node-mac",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Support daemon creation and management on Mac.",
   "keywords": [
     "ngn",
