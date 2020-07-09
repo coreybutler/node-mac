@@ -31,6 +31,8 @@ This module helps create/manage native processes and event logs for Node.js appl
 
 ![Mac](https://user-images.githubusercontent.com/770982/86995965-fa1da980-c16f-11ea-89d6-9204fb172df6.png)
 
+> **Notice** Some vesions of Node will not display the pretty title (Hello World) of the process. See the [underlying issue](https://github.com/nodejs/node/issues/28945) in Node core. Instead, it just displays "node", but still functions normally.
+
 To start, install node-mac via:
 
     npm install node-mac
