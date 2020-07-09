@@ -20,18 +20,16 @@ documentation is now available at the [node-mac documentation portal](http://cor
 
 # node-mac
 
-This is a standalone module, originally designed for internal use in [NGN](http://github.com/thinkfirst/NGN).
-However; it is capable of providing the same features for Node.JS scripts
-independently of NGN.
+This is a standalone module, originally designed for internal use in [NGN](http://github.com/ngnjs/NGN).
+However; it is capable of providing the same features for Node.js scripts independently of NGN.
 
-For alternative versions, see [node-windows](http://github.com/coreybutler/node-windows)
-and [node-linux](http://github.com/coreybutler/node-linux)
+For alternative versions, see [node-windows](http://github.com/coreybutler/node-windows) and [node-linux](http://github.com/coreybutler/node-linux)
 
 ## Overview
 
 This module helps create/manage native processes and event logs for Node.js applications on Mac OSX.
 
-![Windows Mac](https://raw.github.com/coreybutler/node-mac/master/docs/helloworlddaemon.png)
+![Mac](https://user-images.githubusercontent.com/770982/86995965-fa1da980-c16f-11ea-89d6-9204fb172df6.png)
 
 To start, install node-mac via:
 
@@ -200,7 +198,7 @@ and error logging.
 
 ## Event Logging
 
-![Mac log](https://raw.github.com/coreybutler/node-mac/master/docs/helloworldlog.png)
+![Mac log](https://user-images.githubusercontent.com/770982/86995948-f0944180-c16f-11ea-81c9-0561435092aa.png)
 
 Services created with node-mac have two event logs that can be viewed through the Console app.
 A log source named `myappname.log` provides basic logging for the service. It can be used to see
